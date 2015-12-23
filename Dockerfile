@@ -9,6 +9,8 @@ ENV MAVEN_VERSION 3.3.9
 ENV MAVEN_HOME /usr/share/maven
 ENV PATH "$PATH:$MAVEN_HOME/bin"
 
+ENV JHIPSTER_VERSION 2.26.1
+
 # install utilities
 RUN apt-get -y install vim git sudo zip bzip2 fontconfig curl
 
@@ -33,7 +35,6 @@ RUN apt-get install -y nodejs python g++ build-essential
 RUN npm install -g yo bower grunt-cli gulp
 
 # install JHipster
-ENV JHIPSTER_VERSION 2.26.1
 RUN npm install -g generator-jhipster@${JHIPSTER_VERSION}
 
 # configure the "jhipster" user
