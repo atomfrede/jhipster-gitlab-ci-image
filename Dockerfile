@@ -10,6 +10,11 @@ ENV MAVEN_HOME /usr/share/maven
 ENV PATH "$PATH:$MAVEN_HOME/bin"
 
 ENV JHIPSTER_VERSION 2.26.1
+ENV NODEJS_VERSION 5.x
+ENV YEOMAN_VERSION 0.9.6
+ENV BOWER_VERSION 1.7.1
+ENV GRUNT_VERSION 0.1.13
+ENV GULP_VERSION 3.9.0
 
 # install utilities
 RUN apt-get -y install vim git sudo zip bzip2 fontconfig curl
@@ -28,11 +33,20 @@ RUN echo 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /
     apt-get install -y --force-yes --no-install-recommends oracle-java${JAVA_VERSION}-installer oracle-java${JAVA_VERSION}-set-default
 
 # install node.js
-RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -
+RUN curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION} | sudo bash -
 RUN apt-get install -y nodejs python g++ build-essential
 
-# install yeoman bower grunt gulp
-RUN npm install -g yo bower grunt-cli gulp
+# install yeoman
+RUN npm install -g yo@${YEOMAN_VERSION}
+
+# install bower
+RUN npm install -g bower@${BOWER_VERSION}
+
+# install grunt
+RUN npm install -g grunt-cli@${GRUNT_VERSION}
+
+# install gulp
+RUN npm install -g gulp@${GULP_VERSION}
 
 # install JHipster
 RUN npm install -g generator-jhipster@${JHIPSTER_VERSION}
