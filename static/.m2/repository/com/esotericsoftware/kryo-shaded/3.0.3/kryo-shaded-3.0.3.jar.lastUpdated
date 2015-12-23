@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Dec 04 11:00:05 CET 2015
+http\://repo.spring.io/libs-snapshot-local/.error=Could not transfer artifact com.esotericsoftware\:kryo-shaded\:jar\:3.0.3 from/to spring-snapshots (http\://repo.spring.io/libs-snapshot-local)\: Failed to transfer file\: http\://repo.spring.io/libs-snapshot-local/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.jar. Return code is\: 409 , ReasonPhrase\:Conflict.
+http\://repo.spring.io/libs-milestone-local/.lastUpdated=1449223202195
+http\://repo.spring.io/libs-milestone-local/.error=
+@default-spring-snapshots-http\://repo.spring.io/libs-snapshot-local/.lastUpdated=1449223201902
+https\://repo.maven.apache.org/maven2/.lastUpdated=1449223205476
+http\://repo.spring.io/release/.lastUpdated=1449223204635
+http\://repo.spring.io/release/.error=

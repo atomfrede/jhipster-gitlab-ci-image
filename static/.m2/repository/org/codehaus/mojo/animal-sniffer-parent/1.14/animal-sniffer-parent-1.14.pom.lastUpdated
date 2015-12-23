@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Dec 03 21:06:31 CET 2015
+http\://repo.spring.io/libs-snapshot-local/.error=Could not transfer artifact org.codehaus.mojo\:animal-sniffer-parent\:pom\:1.14 from/to spring-snapshots (http\://repo.spring.io/libs-snapshot-local)\: Failed to transfer file\: http\://repo.spring.io/libs-snapshot-local/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom. Return code is\: 409 , ReasonPhrase\:Conflict.
+@default-spring-snapshots-http\://repo.spring.io/libs-snapshot-local/.lastUpdated=1449173190813
+http\://repo.spring.io/libs-milestone-local/.error=
+http\://repo.spring.io/libs-milestone-local/.lastUpdated=1449173191069
+https\://repo.maven.apache.org/maven2/.lastUpdated=1449173191153
