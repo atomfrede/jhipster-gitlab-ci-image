@@ -36,8 +36,8 @@ Docker Version: **2.26.1** (Based on Jhipster version)
 
 I use docker compose with sameersbn/docker-gitlab-ci-multi-runner: 
 
-- [Github - https://github.com/sameersbn/docker-gitlab-ci-multi-runner](https://github.com/sameersbn/docker-gitlab-ci-multi-runner)
-- [Docker - https://hub.docker.com/r/sameersbn/gitlab-ci-multi-runner/](https://hub.docker.com/r/sameersbn/gitlab-ci-multi-runner/)
+- [Github - https://github.com/moifort/docker-gitlab-ci-multi-runner](https://github.com/moifort/docker-gitlab-ci-multi-runner)
+- [Docker Hub - https://hub.docker.com/r/moifort/docker-gitlab-ci-multi-runner](https://hub.docker.com/r/moifort/docker-gitlab-ci-multi-runner)
 
 
 ### docker-compose.yml
