@@ -6,7 +6,7 @@ moifort/jhipster-gitlab-ci-image:2.26.1
 	- [Current version](#current-version)
 	- [Changelog](CHANGELOG.md)
 - [Getting started](#getting-started)
-  - [Gitlab runner](#gitlab-runner)
+  - [Gitlab Runner](#gitlab-runner)
   - [JHipster project](#jhipster-project)
 
 # Introduction
@@ -32,7 +32,7 @@ Docker Version: **2.26.1** (Based on Jhipster version)
 
 # Getting started
 
-## Gitlab runner 
+## Gitlab Runner 
 
 I use docker compose with sameersbn/docker-gitlab-ci-multi-runner: 
 
@@ -46,7 +46,7 @@ I use docker compose with sameersbn/docker-gitlab-ci-multi-runner:
 gitlabmultirunner:
   image: moifort/docker-gitlab-ci-multi-runner:latest
   volumes:
-    - ./data/data:/home/gitlab_ci_multi_runner/data
+    - ./data:/home/gitlab_ci_multi_runner/data
     - /var/run/docker.sock:/var/run/docker.sock
   environment:
     - CI_SERVER_URL=
