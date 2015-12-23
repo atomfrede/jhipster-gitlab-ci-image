@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Dec 03 21:07:14 CET 2015
+http\://repo.spring.io/libs-snapshot-local/.error=Could not transfer artifact org.springframework.security\:spring-security-crypto\:jar\:4.0.3.RELEASE from/to spring-snapshots (http\://repo.spring.io/libs-snapshot-local)\: Failed to transfer file\: http\://repo.spring.io/libs-snapshot-local/org/springframework/security/spring-security-crypto/4.0.3.RELEASE/spring-security-crypto-4.0.3.RELEASE.jar. Return code is\: 409 , ReasonPhrase\:Conflict.
+@default-spring-snapshots-http\://repo.spring.io/libs-snapshot-local/.lastUpdated=1449173232198
+http\://repo.spring.io/libs-milestone-local/.error=
+http\://repo.spring.io/libs-milestone-local/.lastUpdated=1449173233556
+http\://repo.spring.io/release/.lastUpdated=1449173234986

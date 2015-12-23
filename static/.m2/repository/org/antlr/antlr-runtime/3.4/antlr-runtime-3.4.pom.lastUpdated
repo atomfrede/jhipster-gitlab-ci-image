@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Dec 03 21:07:06 CET 2015
+http\://repo.spring.io/libs-snapshot-local/.error=Could not transfer artifact org.antlr\:antlr-runtime\:pom\:3.4 from/to spring-snapshots (http\://repo.spring.io/libs-snapshot-local)\: Failed to transfer file\: http\://repo.spring.io/libs-snapshot-local/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.pom. Return code is\: 409 , ReasonPhrase\:Conflict.
+http\://repo.spring.io/libs-milestone-local/.lastUpdated=1449173226438
+http\://repo.spring.io/libs-milestone-local/.error=
+@default-spring-snapshots-http\://repo.spring.io/libs-snapshot-local/.lastUpdated=1449173226171
+https\://repo.maven.apache.org/maven2/.lastUpdated=1449173226780
+http\://repo.spring.io/release/.lastUpdated=1449173226699
+http\://repo.spring.io/release/.error=

@@ -11,7 +11,7 @@ ENV PATH "$PATH:$MAVEN_HOME/bin"
 
 ENV JHIPSTER_VERSION 2.26.1
 ENV NODEJS_VERSION 5.x
-ENV YEOMAN_VERSION 0.9.6
+ENV YEOMAN_VERSION 1.5.0
 ENV BOWER_VERSION 1.7.1
 ENV GRUNT_VERSION 0.1.13
 ENV GULP_VERSION 3.9.0
@@ -51,18 +51,10 @@ RUN npm install -g gulp@${GULP_VERSION}
 # install JHipster
 RUN npm install -g generator-jhipster@${JHIPSTER_VERSION}
 
-# configure the "jhipster" user
-RUN groupadd jhipster && useradd jhipster -s /bin/bash -m -g jhipster -G jhipster && adduser jhipster sudo
-RUN echo 'jhipster:jhipster' |chpasswd
-RUN mkdir -p /home/jhipster/app
-ADD banner.txt /home/jhipster/banner.txt
-RUN cd /home && chown -R jhipster:jhipster /home/jhipster
+# add .m2 dependecies
+ADD static/.m2 /root/.m2
 
 # clean
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/oracle-jdk${JAVA_VERSION}-installer
 
-# expose the working directory, the Tomcat port, the BrowserSync ports
-VOLUME ["/home/jhipster/app"]
-EXPOSE 8080 3000 3001
-CMD    ["tail", "-f", "/home/jhipster/banner.txt"]
