@@ -1,9 +1,0 @@
-#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Thu Dec 03 21:07:05 CET 2015
-http\://repo.spring.io/libs-snapshot-local/.error=Could not transfer artifact de.regnis.q.sequence\:sequence-library\:pom\:1.0.3 from/to spring-snapshots (http\://repo.spring.io/libs-snapshot-local)\: Failed to transfer file\: http\://repo.spring.io/libs-snapshot-local/de/regnis/q/sequence/sequence-library/1.0.3/sequence-library-1.0.3.pom. Return code is\: 409 , ReasonPhrase\:Conflict.
-http\://repo.spring.io/libs-milestone-local/.lastUpdated=1449173224722
-http\://repo.spring.io/libs-milestone-local/.error=
-@default-spring-snapshots-http\://repo.spring.io/libs-snapshot-local/.lastUpdated=1449173224465
-https\://repo.maven.apache.org/maven2/.lastUpdated=1449173225063
-http\://repo.spring.io/release/.lastUpdated=1449173224981
-http\://repo.spring.io/release/.error=
