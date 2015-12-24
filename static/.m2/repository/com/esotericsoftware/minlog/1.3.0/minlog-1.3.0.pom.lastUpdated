@@ -1,9 +1,0 @@
-#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Fri Dec 04 10:59:59 CET 2015
-http\://repo.spring.io/libs-snapshot-local/.error=Could not transfer artifact com.esotericsoftware\:minlog\:pom\:1.3.0 from/to spring-snapshots (http\://repo.spring.io/libs-snapshot-local)\: Failed to transfer file\: http\://repo.spring.io/libs-snapshot-local/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.pom. Return code is\: 409 , ReasonPhrase\:Conflict.
-http\://repo.spring.io/libs-milestone-local/.lastUpdated=1449223199501
-http\://repo.spring.io/libs-milestone-local/.error=
-@default-spring-snapshots-http\://repo.spring.io/libs-snapshot-local/.lastUpdated=1449223199243
-https\://repo.maven.apache.org/maven2/.lastUpdated=1449223199850
-http\://repo.spring.io/release/.lastUpdated=1449223199766
-http\://repo.spring.io/release/.error=

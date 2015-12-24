@@ -1,7 +1,0 @@
-#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Fri Dec 04 11:00:04 CET 2015
-http\://repo.spring.io/libs-snapshot-local/.error=Could not transfer artifact org.springframework.integration\:spring-integration-core\:jar\:4.2.2.RELEASE from/to spring-snapshots (http\://repo.spring.io/libs-snapshot-local)\: Failed to transfer file\: http\://repo.spring.io/libs-snapshot-local/org/springframework/integration/spring-integration-core/4.2.2.RELEASE/spring-integration-core-4.2.2.RELEASE.jar. Return code is\: 409 , ReasonPhrase\:Conflict.
-@default-spring-snapshots-http\://repo.spring.io/libs-snapshot-local/.lastUpdated=1449223201904
-http\://repo.spring.io/libs-milestone-local/.error=
-http\://repo.spring.io/libs-milestone-local/.lastUpdated=1449223202197
-http\://repo.spring.io/release/.lastUpdated=1449223204639
