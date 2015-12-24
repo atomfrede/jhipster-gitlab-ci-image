@@ -15,6 +15,7 @@ ENV YEOMAN_VERSION 1.5.0
 ENV BOWER_VERSION 1.7.1
 ENV GRUNT_VERSION 0.1.13
 ENV GULP_VERSION 3.9.0
+ENV PHANTOMJS_VERSION 1.9.19
 
 # install utilities
 RUN apt-get -y install vim git sudo zip bzip2 fontconfig curl
@@ -50,6 +51,9 @@ RUN npm install -g gulp@${GULP_VERSION}
 
 # install JHipster
 RUN npm install -g generator-jhipster@${JHIPSTER_VERSION}
+
+# install PhantomJs
+RUN npm install -g phantomjs@${PHANTOMJS_VERSION}
 
 # add .m2 dependecies
 ADD static/.m2 /root/.m2
