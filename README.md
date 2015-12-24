@@ -29,6 +29,7 @@ Docker Version: **2.26.1** (Based on Jhipster version)
 - Bower: 1.7.1
 - Grunt: 0.1.13
 - Gulp: 3.9.0
+- PhantomJs: 1.9.19
 
 # Getting started
 
