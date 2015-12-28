@@ -9,21 +9,15 @@ ENV MAVEN_VERSION 3.3.9
 ENV MAVEN_HOME /usr/share/maven
 ENV PATH "$PATH:$MAVEN_HOME/bin"
 
-ENV JHIPSTER_VERSION 2.26.1
 ENV NODEJS_VERSION 5.x
 ENV YEOMAN_VERSION 1.5.0
 ENV BOWER_VERSION 1.7.1
 ENV GRUNT_VERSION 0.1.13
 ENV GULP_VERSION 3.9.0
-ENV PHANTOMJS_VERSION 1.9.19
+
 
 # install utilities
-RUN apt-get -y install vim git sudo zip bzip2 fontconfig curl
-
-# install maven
-RUN curl -fsSL http://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \
-    && mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \
-    && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
+RUN apt-get -y install nano git sudo zip bzip2 fontconfig curl unzip
 
 # install java8
 RUN echo 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /etc/apt/sources.list && \
@@ -33,11 +27,16 @@ RUN echo 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /
     echo oracle-java${JAVA_VERSION}-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections && \
     apt-get install -y --force-yes --no-install-recommends oracle-java${JAVA_VERSION}-installer oracle-java${JAVA_VERSION}-set-default
 
+# install maven
+RUN curl -fsSL http://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | tar xzf - -C /usr/share \
+    && mv /usr/share/apache-maven-$MAVEN_VERSION /usr/share/maven \
+    && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
+
 # install node.js
 RUN curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION} | sudo bash -
 RUN apt-get install -y nodejs python g++ build-essential
 
-# install yeoman
+# install yo
 RUN npm install -g yo@${YEOMAN_VERSION}
 
 # install bower
@@ -49,16 +48,4 @@ RUN npm install -g grunt-cli@${GRUNT_VERSION}
 # install gulp
 RUN npm install -g gulp@${GULP_VERSION}
 
-# install JHipster
-RUN npm install -g generator-jhipster@${JHIPSTER_VERSION}
-
-# install PhantomJs
-RUN npm install -g phantomjs@${PHANTOMJS_VERSION}
-
-# add .m2 dependecies
-ADD static/.m2 /root/.m2
-
-# clean
-RUN apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/oracle-jdk${JAVA_VERSION}-installer
-
+WORKDIR /data

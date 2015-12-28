@@ -30,6 +30,7 @@ Docker Version: **2.26.1** (Based on Jhipster version)
 - Grunt: 0.1.13
 - Gulp: 3.9.0
 - PhantomJs: 1.9.19
+- RequireJs: 2.1.22
 
 # Getting started
 
