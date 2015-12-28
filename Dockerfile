@@ -48,4 +48,10 @@ RUN npm install -g grunt-cli@${GRUNT_VERSION}
 # install gulp
 RUN npm install -g gulp@${GULP_VERSION}
 
+# add .m2 dependecies
+ADD static/.m2 /root/.m2
+
+# add node_modules dependecies
+ADD static/node_modules /root/node_modules
+
 WORKDIR /data
